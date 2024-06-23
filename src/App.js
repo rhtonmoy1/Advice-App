@@ -21,6 +21,7 @@ export default function App() {
   return (
     // JSX
     <div>
+      <AuthorMessage />
       <h1>{advice}</h1>
       <button onClick={getAdvice}>Get Advice</button>
       <Message count={count} />
@@ -35,4 +36,8 @@ function Message(props) {
       You have read <strong>{props.count}</strong> piecs of advice
     </p>
   );
+}
+
+function AuthorMessage() {
+  return <h2>Wise Words: Free Advice Generator</h2>;
 }
