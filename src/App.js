@@ -1,4 +1,8 @@
 import { useEffect, useState } from "react";
+import TestR from './testR';
+import Nekos from './nekos';
+import Cars from './cars';
+
 
 export default function App() {
   // State
@@ -25,6 +29,9 @@ export default function App() {
       <h1>{advice}</h1>
       <button onClick={getAdvice}>Get Advice</button>
       <Message count={count} />
+      <Cars/>
+      <TestR/>
+      <Nekos/>
     </div>
   );
 }
